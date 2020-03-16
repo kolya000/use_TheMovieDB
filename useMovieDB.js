@@ -17,7 +17,7 @@ const Movie = (function() {
 
       return response.json().then(err => console.log(err));
     });
-  };
+  }
 
   let showMovies = moviesData => {
     const CreateList = () => {
@@ -38,7 +38,7 @@ const Movie = (function() {
     };
     CreateList();
     movieClick();
-  };
+  }
 
   function movieClick() {
     let allMovie = document.querySelectorAll("a");
@@ -210,7 +210,7 @@ const Movie = (function() {
   return {
     getTrending: getTrending,
     search: search
-  };
+  }
 })();
 
 document.addEventListener("DOMContentLoaded", Movie.getTrending);
